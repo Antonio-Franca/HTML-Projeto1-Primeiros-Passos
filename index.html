@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Primeiros Passos HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            line-height: 1.5;
+            width: 92%;
+            margin:0 auto;
+        }
+        p {
+            text-align: justify;
+        }
+        ol{           
+            text-align: justify;
+        }
+        ul{           
+            text-align: justify;
+        }
+        h1{
+            border-bottom: 2px solid black;
+            text-align: center;
+        }
+        figure{
+            text-align: center;
+           
+        }
+
+    </style>
+ 
+</head>
+
+<body>
+    <h1>Introdução ao HTML</h1>
+    <h2 id="indice">Índice</h2>
+        <ul>
+            <li><a href="#comunicação">Comunicação Cliente X Servidor</a></li>
+            <li><a href="#html">O que é HTML?</a></li>
+            <li><a href="#tags">O que são Tags</a></li>
+            <li><a href="#estrutura-basica">Estrutura Básica de um documento HTML</a></li>
+            <li><a href="#tags-principais">Principais Tags</a></li>
+            <li><a href="#referencias">Referências</a></li>
+        </ul>
+
+        <h2 id="comunicação">Comunicação Cliente X Servidor</h2>
+        <small><a href="#indice">Voltar ao índice</a></small>
+        <p>
+            Antes de nos aventurarmos no mundo das páginas web, precisamos compreender um conceito muito importante:
+            <strong>como se dá a comunicação na internet</strong>. Para isso, precisamos saber a arquitetura ou relação cliente e servidor.A relação 
+            cliente-servidor é um conceito fundamental em computação e redes, o qual descreve a interação entre dois tipos de programas ou 
+            dispositivos: o cliente, que faz solicitações de serviços ou recursos, e o servidor, que fornece esses serviços ou recursos
+            em resposta às solicitações do cliente.
+        </p>
+        <h3>Cliente</h3>
+        <p>
+            O cliente é geralmente um programa ou dispositivo que solicita serviços ou recursos de um servidor. Ele envia uma solicitação
+            ao servidor especificando qual serviço ou recurso ele precisa e aguarda uma resposta do servidor. Os clientes podem variar em 
+            complexidade, desde um navegador da web solicitando uma página da web até um aplicativo de email solicitando o envio de uma 
+            mensagem. Entre suas características temos:
+            <ol>
+                <li><strong>Inicia as Solicitações:</strong> O cliente é o iniciador da comunicação. Ele envia solicitações para o servidor solicitando
+                    serviços ou recursos específicos.
+                </li>
+                <li>
+                    <strong>Interage com o Usuário:</strong> Em muitos casos, o cliente interage diretamente com o usuário final. 
+                    Por exemplo, um navegador da web, cliente de email ou aplicativo de mídia social.
+                </li>
+                <li>
+                    <strong>Recebe respostas:</strong> O cliente espera receber respostas do servidor em resposta às suas solicitações. 
+                    Essas respostas podem incluir dados, recursos ou confirmações de que a solicitação foi processada com sucesso.
+                </li>
+            </ol>
+        </p>
+        <h3>Servidor</h3>
+        <p>
+            O servidor é um programa ou dispositivo que recebe as solicitações dos clientes, processa essas solicitações e envia de volta as 
+            respostas apropriadas. Os servidores são projetados para fornecer serviços específicos, como hospedagem de sites, armazenamento 
+            de arquivos, processamento de emails, entre outros. Eles são configurados para escutar solicitações de clientes em uma porta 
+            específica e, quando uma solicitação é recebida, o servidor a processa e envia a resposta de volta ao cliente.Entre suas 
+            características temos:
+            <ol>
+                <li><strong>Aguarda Solicitações:</strong> O servidor permanece em um estado passivo, aguardando solicitações de clientes. 
+                    Ele responde a essas solicitações, processando-as e fornecendo as respostas apropriadas.
+                </li>
+                <li><strong>Alta Capacidade de Processamento e Armazenamento:</strong> Os servidores geralmente são equipados com alta capacidade
+                     de processamento, memória e armazenamento para lidar com múltiplas solicitações de clientes simultaneamente.
+                </li>
+                <li><strong>Escalabilidade:</strong> servidores são projetados para serem escaláveis, o que significa que podem ser dimensionados para
+                     lidar com um grande número de clientes simultaneamente. Isso pode ser alcançado por meio de técnicas como balanceamento 
+                     de carga e clustering.
+                </li>
+            </ol>
+        </p>
+        <h3>Como se dá a comunicação</h3>
+        <p>
+            A comunicação entre clientes e servidores geralmente ocorre através de redes, como a internet. 
+            As solicitações são enviadas pelos clientes para os endereços IP dos servidores, geralmente especificados 
+            por meio de URLs ou outros identificadores de rede. As respostas do servidor são enviadas de volta para o cliente,
+            completando o ciclo de comunicação.
+        </p>
+        <figure>
+            <img src="img/Cliente-Servidor.png" alt="comunicação cliente-servidor">
+            <figcaption>
+                Comunicação Cliente-Servidor
+            </figcaption>
+        </figure>
+        <h2 id="html">O que é HTML?</h2>
+        <small><a href="#indice">Voltar ao índice</a></small>
+        <p>
+            <strong>HTML</strong>(HyperText Markup Language ou Linguagem de Marcação de Hipertexto)é a linguagem padrão utilizada para criar
+            e projetar páginas da web. Ele fornece a estrutura básica para páginas da web como o layout, o conteúdo e os elementos interativos
+            de uma página. O HTML usa marcação para definir elementos individuais dentro de uma página, como: cabeçalhos, parágrafos,
+            imagens, links e muito mais. Esses marcadores são então interpretados pelos navegadores da web para exibir 
+            o conteúdo da página conforme projetado. Diferentemente de uma linguagem de programação o HTML é uma linguagem de marcação,
+            enquanto linguagens de programação como Python, JavaScript ou Java são linguagens de programação de propósito geral.
+            Em HTML, você utiliza <b>tags</b> para marcar partes do conteúdo, indicando sua função e estrutura, enquanto em linguagens de
+            programação você escreve instruções que são executadas sequencialmente.
+        </p>
+
+        <h2 id="tags">O que são Tags?</h2>
+        <small><a href="#indice">Voltar ao índice</a></small>
+        <p>Antes de falarmos da estrutura básica de um documento HTML, Precisamos falar de tags: o coração do HTML. As tags são elementos
+           básicos que são usados para marcar e definir diferentes partes do conteúdo de uma página da web. As tags são cercadas por 
+           colchetes<b> ("<" e ">")</b> e geralmente aparecem em pares, com uma tag de abertura e uma tag de fechamento, embora algumas
+          tags possam ser autocontidas.
+        </p>
+
+        <h2 id="estrutura-basica">Estrutura Básica de um documento HTML</h2>
+        <small><a href="#indice">Voltar ao índice</a></small>
+        <p>
+            Em relação a estrutura básica de um documento HTML, pode-se dizer que consiste nas seguintes tags:
+            <ul>
+                <li>
+                    <b><code>&lt;!DOCTYPE html&gt;:</code></b> Esta declaração define o tipo de documento e a versão do HTML que está sendo usada.
+                </li>
+                <li>
+                    <b><code>&lt;html&gt;:</code></b> A tag html é o contêiner raiz de todo o documento HTML. Ele engloba todo o conteúdo da página.
+                </li>
+                <li>
+                    <b><code>&lt;head&gt;:</code></b> A tag head contém metadados sobre o documento, como o título da página, links para folhas de
+                    estilo externas (CSS), scripts JavaScript, codificação de caracteres e outras informações que não são diretamente
+                     renderizadas na página.
+                </li>
+                <li>
+                    <b><code>&lt;body&gt;:</code></b> A tag body contém todo o conteúdo visível da página, como texto, imagens, vídeos, links e outros 
+                    elementos HTML.
+                </li>
+            </ul>Tags estruturais básicas em um documento HTML
+           
+        </p>
+
+        <H2 id="tags-principais">Principais tags</H2>
+        <small><a href="#indice">Voltar ao índice</a></small>
+           <p>Aqui estão algumas das tags HTML mais comuns:</p>
+        <ul>
+            <li><b><code>&lt;title&gt;:</code></b> Define o título da página, exibido na barra de título do navegador.</li>
+            <li><b><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>:</b> São os cabeçalhos, onde <code>&lt;h1&gt;</code> é o mais importante e <code>&lt;h6&gt;</code> o menos importante.</li>
+            <li><b><code>&lt;p&gt;:</code></b>  Define um parágrafo de texto.</li>
+            <li><b><code>&lt;a&gt;:</code></b> Cria um hiperlink para outra página ou recurso.</li>
+            <li><b><code>&lt;img&gt;:</code></b> Insere uma imagem na página.</li>
+            <li><b><code>&lt;ul&gt;</code> e <code>&lt;ol&gt;</code></b>: Criam listas não ordenadas (com marcadores) e ordenadas (numeradas), respectivamente.</li>
+            <li><b><code>&lt;li&gt;:</code></b>  Define um item de lista dentro de <code>&lt;ul&gt;</code> ou <code>&lt;ol&gt;</code>.</li>
+            <li><b><code>&lt;div&gt;</code> e <code>&lt;span&gt;</code>:</b> São elementos genéricos usados para agrupar outros elementos e aplicar estilos.</li>
+            <li><b><code>&lt;table&gt;:</code></b>  Define uma tabela.</li>
+            <li><b><code>&lt;tr&gt;:</code></b>  Define uma linha em uma tabela.</li>
+            <li><b><code>&lt;td&gt;:</code></b>  Define uma célula de dados em uma tabela.</li>
+            <li><b><code>&lt;form&gt;:</code></b>  Define um formulário para entrada de dados do usuário.</li>
+            <li><b><code>&lt;input&gt;:</code></b>  Cria um campo de entrada em um formulário.</li>
+            <li><b><code>&lt;button&gt;:</code></b>  Cria um botão clicável.</li>
+            <li><b><code>&lt;textarea&gt;:</code></b>  Cria uma área de texto multi-linha em um formulário.</li>
+            <li><b><code>&lt;label&gt;:</code></b>  Define uma etiqueta para um elemento de formulário.</li>
+            </ul>
+        <p>Essas são apenas algumas das tags HTML, mas existem muitas outras para várias finalidades e funcionalidades específicas.</p>
+        <h2 id="referencias">Referências</h2>
+        <small><a href="#indice">Voltar ao índice</a></small>
+        <ul>
+            <li><a href="https://www.dio.me/articles/o-que-e-html-e-pra-que-serve-SC7SOT" target="_blank" title="Artigo Dio sobre html">https://www.dio.me/articles/o-que-e-html-e-pra-que-serve-SC7SOT</a></li>
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" title="Developer mozila website!">developer.mozilla.org/pt-BR/docs/Web/HTML</a></li>
+            <li><a href="https://www.w3schools.com/html/" target="_blank" title="w3schools website!">https://www.w3schools.com/html/</a></li>
+            <li><a href="https://www.freecodecamp.org/news/the-html-handbook/" target="_blank" title="html handbook">https://www.freecodecamp.org/news/the-html-handbook/</a></li>
+        </ul>
+    </body>
+</html>
