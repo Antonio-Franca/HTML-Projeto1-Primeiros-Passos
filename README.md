@@ -13,7 +13,7 @@ Execute os seguintes comandos
 - Clone o repositorio
 
 ```
-git clone https://github.com/Antonio-Franca/HTML-Projeto1-Primeiros-Passos
+git clone https://github.com/Antonio-Franca/HTML-Projeto1-Primeiros-Passos.git
 
 ```
 
